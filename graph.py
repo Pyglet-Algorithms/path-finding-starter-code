@@ -26,11 +26,11 @@ class Graph:
 
     def __init__(self, batch):
         self.batch = batch
-        self.group1 = pyglet.graphics.OrderedGroup(1)
-        self.group2 = pyglet.graphics.OrderedGroup(2)
-        self.group3 = pyglet.graphics.OrderedGroup(3)
-        self.group4 = pyglet.graphics.OrderedGroup(4)
-        self.group5 = pyglet.graphics.OrderedGroup(5)
+        self.group1 = pyglet.graphics.Group(order=1)
+        self.group2 = pyglet.graphics.Group(order=2)
+        self.group3 = pyglet.graphics.Group(order=3)
+        self.group4 = pyglet.graphics.Group(order=4)
+        self.group5 = pyglet.graphics.Group(order=5)
         pathing.set_current_graph_paths()
         self.set_up_graph()
 

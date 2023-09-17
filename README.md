@@ -1,1 +1,1 @@
-# Path Finding Starter Code
+# Pathfinding Starter Code

@@ -18,10 +18,10 @@ pyglet.resource.reindex()
 
 # Set Layers
 main_batch = pyglet.graphics.Batch()
-background = pyglet.graphics.OrderedGroup(0)
-player_layer = pyglet.graphics.OrderedGroup(6)
-text_display_area = pyglet.graphics.OrderedGroup(20)
-button_display_area = pyglet.graphics.OrderedGroup(21)
+background = pyglet.graphics.Group(order=0)
+player_layer = pyglet.graphics.Group(order=6)
+text_display_area = pyglet.graphics.Group(order=20)
+button_display_area = pyglet.graphics.Group(order=21)
 
 # Set Game Data
 for graph in graph_data:
